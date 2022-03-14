@@ -32,7 +32,7 @@ class Directory extends React.Component{
         return(
             <div className="direct-menu">
                 {this.state.product.map(({productname,image,id})=>(
-                    <MenuItem key={id}  productname = {productname}></MenuItem>
+                    <MenuItem key={id}  productname = {productname} image = {image}></MenuItem>
                 ))}
             </div>
         )
