@@ -13,8 +13,8 @@ function App() {
       <Routes>
           <Route index element={<Home/>}/>
           <Route path='/product' element={<ProductPage />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/sign-up' ></Route>
+          <Route path='/auth' element={<Login />} />
+          
       </Routes>
       <Footer></Footer>
     </div>

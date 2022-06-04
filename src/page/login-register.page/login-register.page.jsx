@@ -1,17 +1,12 @@
 
-import { signInWithGooglePopup } from "../../firebase/firebase";
-import { createUserDocumentFromAuth } from "../../firebase/firebase";
 import SignUpForm from "./register-section/register-form.page";
+import SignInForm from "./login-section/login-form.page";
+import './login-register.styles.scss';
 const Login = () => {
 
-    const logGoogleUserPopup = async ()=>{
-        const {user} = await signInWithGooglePopup();
-        const userDocRef = await createUserDocumentFromAuth(user);
-    }
     return(
-        <div>
-            <h1>Login</h1>
-            <button onClick={logGoogleUserPopup}>Sign In with Google Popup</button>
+        <div className="authentication-container">
+            <SignInForm></SignInForm>
             <SignUpForm></SignUpForm>
         </div>
     )
