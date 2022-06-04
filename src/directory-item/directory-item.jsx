@@ -9,30 +9,35 @@ class Directory extends React.Component{
                 productname : 'Main Courses',
                 image: 'MainCourse.png',
                 id: '1',
+                size: 'large'
             },{
                 productname : 'Drinks',
                 image: 'Drinks.png',
                 id: '2',
+                size: 'large'
             },{
                 productname : 'Desserts',
                 image: 'Desserts.png',
                 id: '3',
+                size: 'large'
             },{
                 productname : 'Snacks',
                 image: 'FrenchFries.png',
                 id: '4',
+                size: 'large'
             },{
                 productname : 'Appetizer',
                 image: 'Appetizer.png',
                 id: '5',
+                size: 'large'
             }]
         }
     }
     render(){
         return(
             <div className="direct-menu">
-                {this.state.product.map(({productname,image,id})=>(
-                    <MenuItem key={id}  productname = {productname} image = {image}></MenuItem>
+                {this.state.product.map(({productname,image,id,size})=>(
+                    <MenuItem key={id}  productname = {productname} image = {image} size = {size}></MenuItem>
                 ))}
             </div>
         )
