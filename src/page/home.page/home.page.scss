@@ -1,0 +1,24 @@
+.homeContainer{
+  
+}
+
+.homeIntro{
+    background-image: url('../../images/cafe-bg.jpg');
+    background-size: cover;
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text{
+    text-align: center;
+    p{
+        color: white;
+        font-size: 60px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        text-shadow: 3px 3px 1px black;
+    }
+}

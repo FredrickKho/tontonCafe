@@ -1,0 +1,29 @@
+
+.footer{
+    background-color: rgb(65, 56, 56);
+    text-align: center;
+    color: white;
+    font-family: 'tonton-cafe';
+    .upper{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .upper-content{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .left-content{
+                img{
+                    width: 170px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    .lower{
+        height: 60px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
