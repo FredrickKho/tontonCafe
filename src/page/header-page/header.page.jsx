@@ -2,12 +2,13 @@ import {React,Fragment, useContext} from "react";
 import './header.page.scss';
 import { Link,Outlet} from "react-router-dom";
 import { UserContext } from "../../context/user.context";
+import { CartContext } from "../../context/cart.context";
 import { signOutUser } from "../../firebase/firebase";
 import Cart from "../../component/Cart/cart.component";
 import CartDropdown from "../../component/Cart/Cart-dropdown/cart-dropdown.component";
 const Header = () => {
     const {currentUser} = useContext(UserContext);
-    
+    const {isCartOpen} = useContext(CartContext); 
     return(
         <Fragment>
             <div className='navigation'>
@@ -28,7 +29,7 @@ const Header = () => {
                     }
                     <Cart></Cart>
                 </div>
-                <CartDropdown></CartDropdown>
+                {isCartOpen && <CartDropdown></CartDropdown>}
             </div>
             <Outlet />
         </Fragment>

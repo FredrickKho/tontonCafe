@@ -8,12 +8,15 @@ import "./fonts/PerfectJour.ttf";
 import "./fonts/Hiragino Sans GB W3.ttf";
 import { UserProvider } from "./context/user.context";
 import { ProductProvider } from "./context/product.context";
+import { CartProvider } from "./context/cart.context";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
         <ProductProvider>
-          <App />
+          <CartProvider>
+            <App />
+          </CartProvider>
         </ProductProvider>
       </UserProvider>
     </BrowserRouter>

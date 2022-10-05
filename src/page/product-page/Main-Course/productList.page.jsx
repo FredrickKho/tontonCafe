@@ -13,6 +13,7 @@ export const ProductList = () => {
       {/* {console.log(test2)} */}
       {test2.map((product)=>(
         // console.log(product.name)
+        
         <ProductCard key={product.id} product = {product} category = {category}></ProductCard>
       ))}
     </div>
