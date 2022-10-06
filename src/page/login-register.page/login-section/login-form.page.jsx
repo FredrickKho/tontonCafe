@@ -6,7 +6,7 @@ import {
   signInWithGooglePopup,
   signInAuthUserWithEmailandPassword,
 } from "../../../firebase/firebase";
-import { createUserDocumentFromAuth } from "../../../firebase/firebase";
+
 const defaultFormField = {
   email: "",
   password: "",
